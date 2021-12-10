@@ -1,8 +1,6 @@
 import React from "react";
 import s from "./Testimonial.module.css";
-import cn from "classnames";
-import { Text, Button, Container } from "@components/ui";
-import { memberWave } from "@components/icons";
+import { Text, Container } from "@components/ui";
 
 const members = [
   {

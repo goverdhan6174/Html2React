@@ -31,13 +31,13 @@ const Footer = ({ className }) => {
         <div className="grid grid-cols-5 justify-start">
           {links.map((link) => {
             return (
-              <div className="flex flex-col gap-4 my-8">
+              <div key={link.name} className="flex flex-col gap-4 my-8">
                 <Text variant="subText" className="text-accent-5">
                   {link.name}
                 </Text>
                 {link.links.map((link) => {
                   return (
-                    <Link href="#">
+                    <Link key={link} href="#">
                       <a>{link}</a>
                     </Link>
                   );

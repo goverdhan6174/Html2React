@@ -1,33 +1,31 @@
-import cn from 'classnames'
-import React, {
-  forwardRef,
-} from 'react'
-import s from './Button.module.css'
-import { LoadingDots } from '@components/ui'
+import cn from "classnames";
+import React, { forwardRef } from "react";
+import s from "./Button.module.css";
+import { LoadingDots } from "@components/ui";
 
-const Button= forwardRef((props, buttonRef) => {
+const Button = (props) => {
   const {
     className,
-    variant = 'flat',
+    variant = "flat",
     children,
     active,
     width,
     loading = false,
     disabled = false,
     style = {},
-    Component = 'button',
+    Component = "button",
     ...rest
-  } = props
+  } = props;
 
   const rootClassName = cn(
     s.root,
     {
-      [s.ghost]: variant === 'ghost',
+      [s.ghost]: variant === "ghost",
       [s.loading]: loading,
       [s.disabled]: disabled,
     },
     className
-  )
+  );
 
   return (
     <Component
@@ -48,7 +46,7 @@ const Button= forwardRef((props, buttonRef) => {
         </i>
       )}
     </Component>
-  )
-})
+  );
+};
 
-export default Button
+export default Button;
