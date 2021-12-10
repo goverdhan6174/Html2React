@@ -1,0 +1,42 @@
+.container {
+  @apply w-full h-screen text-center py-20;
+  background: #f4f6f7;
+}
+
+.tableContainer {
+  @apply grid grid-cols-3 gap-8;
+}
+
+.table {
+  @apply relative z-10 overflow-hidden rounded-lg p-4 shadow-magical bg-white max-w-xs;
+}
+
+.tableText {
+  @apply flex flex-col z-10;
+}
+
+.underline {
+  @apply w-20 h-1 z-10;
+}
+
+.image {
+  @apply absolute top-0 z-0 max-h-56;
+}
+
+.points {
+  @apply flex flex-col items-start my-6;
+  & > li {
+    @apply my-2;
+  }
+  & > li > i {
+    @apply text-blue mx-2;
+  }
+}
+
+.point {
+  @apply inline-flex items-center;
+}
+
+.bottom {
+  @apply absolute w-full -bottom-4 left-0 z-0;
+}

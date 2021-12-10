@@ -1,0 +1,20 @@
+.container {
+  @apply w-full h-screen grid grid-cols-2;
+}
+
+.first {
+  @apply w-full h-full;
+  & > img {
+    object-fit: cover;
+    @apply h-full;
+  }
+}
+
+.second {
+  @apply bg-blue text-white flex flex-col gap-6 px-6 items-center justify-center text-center;
+}
+
+.searchbar {
+  width: 80%;
+  margin: 0 auto;
+}

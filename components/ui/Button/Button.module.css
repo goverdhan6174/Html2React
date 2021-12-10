@@ -1,0 +1,37 @@
+.root {
+  @apply bg-blue text-white cursor-pointer inline-flex
+  px-7 py-3 leading-6 transition ease-in-out duration-150
+  shadow-sm text-center justify-center
+  border border-transparent items-center font-bold
+  tracking-wide rounded-full uppercase;
+  max-height: 64px;
+}
+
+.root:hover {
+  @apply bg-blue shadow-md;
+}
+
+.loading {
+  @apply bg-accent-1 text-accent-3 border-accent-2 cursor-not-allowed;
+}
+
+.ghost {
+  @apply bg-white text-blue cursor-pointer inline-flex
+  px-7 py-3 leading-6 transition ease-in-out duration-150
+  shadow-sm text-center justify-center
+  border border-transparent items-center font-bold
+  tracking-wide rounded-full uppercase;
+}
+
+.ghost:hover {
+  @apply shadow-md bg-white text-blue;
+}
+
+.disabled,
+.disabled:hover {
+  @apply text-accent-4 border-accent-2 bg-accent-1 cursor-not-allowed;
+  filter: grayscale(1);
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}

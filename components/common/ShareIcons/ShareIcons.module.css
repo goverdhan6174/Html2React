@@ -1,0 +1,11 @@
+.socials {
+  @apply flex items-center md:space-x-4 space-x-3 text-gray-900 font-semibold md:flex text-accent-5;
+}
+
+.socialicons {
+  transform: translateY(-10%);
+}
+
+.icon {
+  @apply  hover:text-blue;
+}

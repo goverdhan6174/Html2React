@@ -1,0 +1,17 @@
+.root {
+  @apply pt-6;
+  background-color: #f4f6f7;
+}
+
+.link {
+  transform: width 300ms linear;
+}
+
+.link:hover > svg {
+  transform: scale(1.1, 1.1);
+}
+
+.bottom {
+  background-color: #2b354f;
+  @apply w-full p-4 flex justify-center items-center text-white;
+}

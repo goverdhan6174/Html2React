@@ -1,0 +1,35 @@
+.banner {
+  @apply relative flex flex-col items-center justify-center w-full z-10;
+  height: 100vh;
+}
+
+.container {
+  @apply flex flex-col z-10 gap-4 max-w-2xl px-4 text-center;
+}
+
+.buttonContainer {
+  @apply flex gap-4 justify-center;
+}
+
+.top {
+  @apply absolute top-0 w-full h-full z-0;
+  background-image: url(/images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top::before {
+  @apply absolute h-full w-full;
+  content: "";
+  background: linear-gradient(
+    rgba(232, 237, 255, 0.9),
+    rgba(239, 254, 255, 0.9) 50%,
+    rgba(254, 255, 244, 0.3) 68%,
+    rgba(255, 255, 255, 0.12)
+  );
+}
+
+.bottom {
+  @apply absolute bottom-0 w-full pointer-events-none;
+}

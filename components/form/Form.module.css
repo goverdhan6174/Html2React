@@ -1,0 +1,12 @@
+.container {
+  @apply relative w-full h-screen flex flex-col justify-center items-center text-center;
+}
+
+.form {
+  @apply grid grid-cols-2 gap-8 w-full;
+  max-width: 72ch;
+}
+
+.buttonContainer {
+  @apply col-span-2 flex items-center justify-center;
+}

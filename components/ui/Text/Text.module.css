@@ -1,0 +1,37 @@
+.body {
+  @apply text-base leading-7 max-w-6xl mx-auto;
+}
+
+.heading {
+  @apply text-5xl pt-1 pb-2 font-semibold tracking-wide cursor-pointer mb-2 leading-10;
+}
+
+.subHeading {
+  @apply text-xl pt-1 pb-2 tracking-wide cursor-pointer mb-2;
+  max-width: 65ch;
+}
+
+.pageHeading {
+  @apply pt-1 pb-4 text-6xl leading-7 font-bold tracking-wide;
+}
+
+.pageSubHeading {
+  @apply pt-1 pb-2 tracking-wide cursor-pointer mb-6 mt-2;
+  max-width: 65ch;
+}
+
+.sectionHeading {
+  @apply pt-1 pb-2 text-2xl tracking-wide cursor-pointer mb-2;
+}
+
+.baseHead {
+  @apply pt-1 pb-2 text-xl tracking-wide cursor-pointer mb-2 font-semibold;
+}
+
+.button {
+  @apply pt-1 pb-2 font-bold tracking-wide mb-2 cursor-pointer;
+}
+
+.subText {
+  @apply text-sm font-semibold;
+}

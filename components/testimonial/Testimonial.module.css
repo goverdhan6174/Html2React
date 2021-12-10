@@ -1,0 +1,28 @@
+.container {
+  @apply w-full text-center py-20 px-10;
+}
+
+.tableContainer {
+  @apply grid grid-cols-3 gap-8;
+}
+
+.table {
+  @apply relative z-10 overflow-hidden rounded-lg p-6 shadow-magical bg-white max-w-xs text-center items-center justify-center;
+}
+
+.underline {
+  @apply h-px z-10 bg-accent-2 mx-auto my-4;
+  width: 80%;
+}
+
+.image {
+  @apply z-0 w-20 h-20 rounded-full bg-accent-2 relative overflow-hidden flex justify-center mx-auto mb-4;
+}
+
+.partners {
+  @apply grid grid-cols-4 gap-4 py-20 px-10;
+  background-color: #f4f6f7;
+  & > img {
+    width: 80%;
+  }
+}
