@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Product.module.css";
 import { Text } from "@components/ui";
 
-const ProductCard = React.forwardRef((props, ref) => {
+const ProductCard = (props, ref) => {
   let product = props.product;
   let date = Date(product.date).split(" ");
   return (
@@ -37,6 +37,6 @@ const ProductCard = React.forwardRef((props, ref) => {
       </Text>
     </div>
   );
-});
+};
 
-export default ProductCard;
+export default React.forwardRef(ProductCard);
