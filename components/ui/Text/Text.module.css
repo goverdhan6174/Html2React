@@ -33,5 +33,5 @@
 }
 
 .subText {
-  @apply text-sm font-semibold;
+  @apply text-sm;
 }

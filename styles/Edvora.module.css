@@ -1,0 +1,28 @@
+.container {
+    @apply bg-accent-4;
+}
+
+.layout {
+    @apply grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6;
+}
+
+.dropdown {
+    @apply relative p-4 col-span-1 md:col-span-2 lg:col-span-2;
+}
+
+.dropdownContainer {
+    @apply sticky flex flex-col bg-accent-1 p-4 rounded-md;
+    top: 1rem;
+}
+
+.products {
+    @apply col-span-1 md:col-span-4 lg:col-span-10 p-4;
+}
+
+.pageHeading {
+    @apply my-6 text-accent-7;
+}
+
+.heading {
+    @apply mb-4 text-accent-5;
+}

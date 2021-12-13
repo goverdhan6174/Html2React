@@ -1,0 +1,19 @@
+.dropdown {
+    @apply flex flex-col my-2;
+}
+
+.button {
+    @apply bg-accent-4 text-accent-6 font-semibold py-2 px-4 rounded-md inline-flex items-center justify-between;
+
+    & > span {
+        @apply mr-1;
+    }
+}
+
+.arrow {
+    @apply fill-current text-accent-6;
+}
+
+.item {
+    @apply rounded-md text-accent-6 hover:bg-accent-4 py-2 px-4 block;
+}
