@@ -32,7 +32,7 @@ const templates = [
     id: "479261303276251",
   },
   {
-    name: "sample_flight_confirmation_1",
+    name: "sample_flight_confirmation_video",
     components: [
       {
         type: "HEADER",
@@ -54,7 +54,29 @@ const templates = [
     id: "399148435188862",
   },
   {
-    name: "sample_flight_confirmation",
+    name: "sample_flight_confirmation_image",
+    components: [
+      {
+        type: "HEADER",
+        format: "IMAGE",
+      },
+      {
+        type: "BODY",
+        text:
+          "Ini merupakan konfirmasi penerbangan Anda untuk {{1}}-{{2}} di {{3}} {{4}}.",
+      },
+      {
+        type: "FOOTER",
+        text: "Pesan ini berasal dari bisnis yang tidak terverifikasi.",
+      },
+    ],
+    language: "id",
+    status: "APPROVED",
+    category: "TICKET_UPDATE",
+    id: "399148435188862",
+  },
+  {
+    name: "sample_flight_confirmation_document",
     components: [
       {
         type: "HEADER",
@@ -110,13 +132,6 @@ function placeholderInputs(text, id) {
 }
 
 function Rampwin() {
-  useEffect(() => {
-    document.getElementsByTagName("body")[0].dataset.theme = "dark";
-    return () => {
-      document.getElementsByTagName("body")[0].dataset.theme = "light";
-    };
-  }, []);
-
   let [selectedTemplate, setSelectedTemplate] = useState(null);
 
   let headerInputFields = [];
@@ -203,9 +218,11 @@ function Rampwin() {
         items={templates.map((temp) => temp.name)}
         onChange={setSelectedTemplate}
       />
-      {selectedTemplate && <Text> {selectedTemplate} </Text>}
       {selectedTemplate && (
-        <form onSubmit={submitHandler} className="max-w-2xl">
+        <form
+          onSubmit={submitHandler}
+          className="max-w-2xl my-5 mx-auto bg-accent-1 p-4"
+        >
           {headerInputFields.length > 0 && (
             <div className="flex flex-col p-4">
               <Text variant="sectionHeading"> Template Header </Text>
