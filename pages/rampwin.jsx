@@ -121,6 +121,7 @@ function placeholderInputs(text, id) {
             type="text"
             name={`id-${i}`}
             id={`id-${i}`}
+            required
           />
         </div>
       );
@@ -212,17 +213,14 @@ function Rampwin() {
   };
 
   return (
-    <div>
+    <div className="max-w-2xl mx-auto">
       <Dropdown
         label="Select  the template"
         items={templates.map((temp) => temp.name)}
         onChange={setSelectedTemplate}
       />
       {selectedTemplate && (
-        <form
-          onSubmit={submitHandler}
-          className="max-w-2xl my-5 mx-auto bg-accent-1 p-4"
-        >
+        <form onSubmit={submitHandler} className="my-5 bg-accent-1 p-4">
           {headerInputFields.length > 0 && (
             <div className="flex flex-col p-4">
               <Text variant="sectionHeading"> Template Header </Text>
@@ -243,6 +241,12 @@ function Rampwin() {
           )}
           <Input type="submit" className="cursor-pointer" />
         </form>
+      )}
+
+      {!selectedTemplate && (
+        <Text variant="sectionHeading" className="my-12 mx-auto text-center">
+          No Template Selected
+        </Text>
       )}
     </div>
   );
