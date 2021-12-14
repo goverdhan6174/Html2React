@@ -1,15 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import s from "./Dropdown.module.css";
 
-function DropdownItem({ children, link = "#" }) {
-  return (
-    <Link href={link}>
-      <a className={s.item}>
-        {children}
-      </a>
-    </Link>
-  );
+function DropdownItem({ children }) {
+  return <span className={s.item}>{children}</span>;
 }
 
 export default DropdownItem;
