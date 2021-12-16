@@ -3,7 +3,7 @@
 }
 
 .button {
-    @apply bg-accent-4 text-accent-6 font-semibold py-2 px-4 rounded-md inline-flex items-center justify-between;
+    @apply bg-primary-2 text-secondary-2 font-semibold py-2 px-4 rounded-md inline-flex items-center justify-between;
 
     & > span {
         @apply mr-1;
@@ -11,9 +11,9 @@
 }
 
 .arrow {
-    @apply fill-current text-accent-6;
+    @apply fill-current text-secondary-2;
 }
 
 .item {
-    @apply rounded-md text-accent-6 hover:bg-accent-4 py-2 px-4 block;
+    @apply rounded-md text-secondary-2 hover:bg-primary-2 py-2 px-4 block;
 }

@@ -3,7 +3,7 @@ import s from './Input.module.css'
 import React from 'react'
 
 const Input = (props) => {
-  const { className, children, onChange, ...rest } = props
+  const { className, children, onChange, wrapperClassName, ...rest } = props
 
   const rootClassName = cn(s.root, {}, className)
 
@@ -15,7 +15,7 @@ const Input = (props) => {
   }
 
   return (
-    <label>
+    <label className={cn(wrapperClassName)}>
       <input
         className={rootClassName}
         onChange={handleOnChange}
