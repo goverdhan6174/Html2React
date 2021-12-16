@@ -78,7 +78,7 @@ function Cimet() {
             }}
           />
           <Button type="submit" className="col-span-8 md:col-span-2">
-            GET TOKEN
+            Search Address
           </Button>
         </form>
       )}
